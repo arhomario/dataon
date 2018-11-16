@@ -1,8 +1,9 @@
 // http://ionicframework.com/docs/theming/
+@import '../pages/home/home.scss';
 
-$bg-color : #2A2E43;
-$white-color : #ffffff;
-$purple:     #665EFF;
+$color-primary : #2A2E43;
+$color-light : #ffffff;
+$color-purple:     #665EFF;
 
 // App Global Sass
 // --------------------------------------------------
@@ -19,7 +20,7 @@ $purple:     #665EFF;
 // automatically applied to the <body> element in the app.
 
 .content{
-    background-color: $bg-color;
+    background-color: $color-primary;
 }
 .header{
     .toolbar-background{
@@ -27,54 +28,8 @@ $purple:     #665EFF;
         border: 0px;   
     }
     .toolbar-title{
-        color:$white-color;
+        color:$color-light;
     }
-}
-
-.posts{    
-    .card{     
-        width: calc(100% - 40px);
-        overflow:visible;
-        border-radius: 10px;
-        .card-content{            
-            .row{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .img-thumbnail{
-                border-radius: 10px;
-            }       
-            .header{
-                text-align: left;
-            }  
-            .body{
-                direction: initial;
-                text-align: left;
-            } 
-        } 
-    }
-
-    .left{
-        margin-left: 25px;
-        .card-content{
-            direction: ltr;
-            margin-left: -45px;
-            .avatar{
-                text-align: right;
-            }
-        }
-    } 
-    .right{
-        margin-right: 25px;
-        .card-content{
-            direction: rtl;
-            margin-right: -45px;
-            .avatar{
-                text-align: left;
-            }
-        }
-    }  
 }
 
 .btn-bottom{   
@@ -83,6 +38,6 @@ $purple:     #665EFF;
     bottom: 15px;
     left: initial;    
     .button-default{
-        background-color: $purple;
+        background-color: $color-purple;
     }
 }

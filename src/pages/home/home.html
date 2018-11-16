@@ -1,12 +1,51 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ahmad Rhomario
-    </ion-title>
+    <button ion-button icon-only menuToogle>
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>   
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
+  <!-- New Post -->
+  <div class="new-post">
+    <h1>City News</h1>
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col col-2 no-padding>
+            <img src="../../assets/imgs/avatar.jpg"/>
+          </ion-col>
+          <ion-col col-10>
+            <h3><strong>Andree-Ann Labrance</strong></h3>
+            <small>18 Nov</small>
+          </ion-col>
+        </ion-row>
+
+        <p>We must believe that we are gifted for something, andthat sing,at</p>
+        <ion-row>
+            <ion-col col-2>
+              <button ion-button icon-only>
+                <ion-icon name="share"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col col-10 text-right>
+              <button ion-button icon-end>
+                256
+                <ion-icon name="chatbubbles"></ion-icon>
+              </button>
+              <button ion-button icon-end>
+                4 K
+                <ion-icon name="heart"></ion-icon>
+              </button>
+            </ion-col>
+        </ion-row>
+      </ion-card-content>
+      
+    </ion-card>
+  </div>
+  <!-- ./New Post -->
   
   <!-- Posts -->
   <div class="posts">
