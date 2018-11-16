@@ -7,31 +7,41 @@
 </ion-header>
 
 <ion-content>
+  
   <!-- Posts -->
-  <ion-card class="posts">
-    <ion-card-content>
-      <ion-row>
-        <ion-col col-4>
-          <img src="../../assets/imgs/logo.png" class="img-thumbnail"/>
-        </ion-col>
-        <ion-col col-8>
+  <div class="posts">
+    <div class="{{ data.align }}" *ngFor = "let data of datas">
+      <ion-card>
+        <ion-card-content>
           <ion-row>
+            <ion-col col-4>
+              <img src="../../assets/imgs/{{ data.image }}" class="img-thumbnail"/>
+            </ion-col>
             <ion-col col-8>
-              <small>17 Nov</small>
-              <h3><strong>Adrien Stone</strong></h3>
-            </ion-col>
-            <ion-col col-4 text-right>
-              <ion-img width="40" height="40" src="../../assets/imgs/logo.png"></ion-img>
+              <ion-row class="header">
+                <ion-col col-8 class="title">
+                  <small>{{ data.date }}</small>
+                  <h3><strong>{{ data.name }}</strong></h3>
+                </ion-col>
+                <ion-col col-4 class="avatar">
+                  <ion-img width="40" height="40" src="../../assets/imgs/{{ data.avatar }}"></ion-img>
+                </ion-col>
+              </ion-row>
+              <ion-row class="body">
+                <ion-col col-12>
+                  <p>{{ data.body }}</p> 
+                </ion-col>
+              </ion-row>
             </ion-col>
           </ion-row>
-          <ion-row>
-            <ion-col col-12>
-              <p>If you're offered a seat on a rocket ship, don't ask what seat! Just get on.</p> 
-            </ion-col>
-          </ion-row>
-        </ion-col>
-      </ion-row>
-    </ion-card-content>
-  </ion-card>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
   <!-- ./Posts -->
+  <div ion-fixed class="btn-bottom">
+    <button ion-button round>POST NEWS</button>
+  </div>
 </ion-content>
+
+

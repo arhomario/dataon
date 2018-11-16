@@ -2,6 +2,7 @@
 
 $bg-color : #2A2E43;
 $white-color : #ffffff;
+$purple:     #665EFF;
 
 // App Global Sass
 // --------------------------------------------------
@@ -30,20 +31,58 @@ $white-color : #ffffff;
     }
 }
 
-.posts{
-    margin-left: 25px;
-    width: calc(100% - 40px);
-    overflow:visible;
-    border-radius: 10px;
-    .card-content{
-        margin-left: -35px;
-        .row{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .img-thumbnail{
-            border-radius: 10px;
+.posts{    
+    .card{     
+        width: calc(100% - 40px);
+        overflow:visible;
+        border-radius: 10px;
+        .card-content{            
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .img-thumbnail{
+                border-radius: 10px;
+            }       
+            .header{
+                text-align: left;
+            }  
+            .body{
+                direction: initial;
+                text-align: left;
+            } 
+        } 
+    }
+
+    .left{
+        margin-left: 25px;
+        .card-content{
+            direction: ltr;
+            margin-left: -45px;
+            .avatar{
+                text-align: right;
+            }
         }
     } 
+    .right{
+        margin-right: 25px;
+        .card-content{
+            direction: rtl;
+            margin-right: -45px;
+            .avatar{
+                text-align: left;
+            }
+        }
+    }  
+}
+
+.btn-bottom{   
+    top: initial;
+    right: 15px;
+    bottom: 15px;
+    left: initial;    
+    .button-default{
+        background-color: $purple;
+    }
 }
