@@ -10,12 +10,12 @@
 
   <!-- New Post -->
   <div class="new-post">
-    <h1>City News</h1>
+    <h1>City News</h1>    
     <ion-card>
       <ion-card-content>
         <ion-row>
           <ion-col col-2 no-padding>
-            <img src="../../assets/imgs/avatar.jpg"/>
+            <img src="../../assets/imgs/avatar.jpg" class="img-avatar"/>
           </ion-col>
           <ion-col col-10>
             <h3><strong>Andree-Ann Labrance</strong></h3>
@@ -24,7 +24,7 @@
         </ion-row>
 
         <p>We must believe that we are gifted for something, andthat sing,at</p>
-        <ion-row>
+        <ion-row class="btn-area">
             <ion-col col-2>
               <button ion-button icon-only>
                 <ion-icon name="share"></ion-icon>
@@ -44,6 +44,7 @@
       </ion-card-content>
       
     </ion-card>
+    <img src="../../assets/imgs/image.jpg" class="img-thumbnail"/>
   </div>
   <!-- ./New Post -->
   
@@ -63,7 +64,7 @@
                   <h3><strong>{{ data.name }}</strong></h3>
                 </ion-col>
                 <ion-col col-4 class="avatar">
-                  <ion-img width="40" height="40" src="../../assets/imgs/{{ data.avatar }}"></ion-img>
+                  <img src="../../assets/imgs/{{ data.avatar }}" class="img-avatar"/>
                 </ion-col>
               </ion-row>
               <ion-row class="body">

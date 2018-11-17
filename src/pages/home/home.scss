@@ -1,23 +1,66 @@
 page-home {
-    .new-post{
+    .new-post{        
+        position: relative;
+        margin-bottom: 80px;
         h1{
             color: #fff;
         }
+        .img-thumbnail{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card{
+            position: absolute;
+            bottom: -80px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            .card-content{
+                .row{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                p,h4,small{
+                    color: #454F63;
+                }          
+                .img-avatar{
+                    border-radius: 10px;
+                }   
+                .btn-area{
+                    border-top: 1px solid #F4F4F6;
+                    margin-top: 15px;
+                    .button{
+                        background-color: transparent;
+                        box-shadow: none;
+                        color: #454F63;
+                    }
+                }      
+            }
+               
+        }
+        
     }
     .posts{    
         .card{     
             width: calc(100% - 40px);
             overflow:visible;
             border-radius: 10px;
+            margin-bottom: 25px;
             .card-content{            
                 .row{
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 }
+                p,h4,small{
+                    color: #454F63;
+                } 
                 .img-thumbnail{
                     border-radius: 10px;
-                }       
+                }      
+                .img-avatar{
+                    border-radius: 10px;
+                } 
                 .header{
                     text-align: left;
                 }  

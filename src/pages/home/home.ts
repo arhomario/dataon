@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   public datas = [];
   constructor(public navCtrl: NavController) {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
       this.datas.push({
         align : (i % 2 == 0) ? 'left' : 'right',
         date : "17 Nov",

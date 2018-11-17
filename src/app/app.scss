@@ -24,12 +24,18 @@ $color-purple:     #665EFF;
 }
 .header{
     .toolbar-background{
-        background: transparent;
+        background: transparent;        
         border: 0px;   
     }
     .toolbar-title{
         color:$color-light;
     }
+    .button{
+        box-shadow: none;
+    }    
+}
+.header-md::after{
+    background-image: none;
 }
 
 .btn-bottom{   
